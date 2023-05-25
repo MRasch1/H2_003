@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-bar{
+    background-color: #000;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+}
