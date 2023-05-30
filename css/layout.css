@@ -5,8 +5,13 @@
 }
 
 .wrapper{
+    background-image: url("../img/Siths.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
+    overflow: auto;
 }
 
 .nav-bar{
@@ -14,10 +19,107 @@
     height: 50px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Star Wars', sans-serif;                          
 }
 
 .nav-item{
     color: white;
     text-decoration: none;
     font-size: 1.4em;
+    text-transform: capitalize;
+}
+
+.card-container{
+    margin: auto;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card{
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 10px;
+    color: #e244ff;
+    box-shadow: 0px 0px 5px;
+    background-color: #25214c;
+    opacity: .9;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: system-ui;
+    white-space: normal;
+    word-break:break-all;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    word-spacing: 10px;
+}
+
+.card.selected{
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 10px;
+
+    color: #e244ff;
+    box-shadow: 0px 0px 5px;
+    background-color: #25214c;
+    opacity: .9;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-family: system-ui;
+    white-space: normal;
+    word-break:break-all;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    word-spacing: 10px;
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 160vh;
+}
+
+.key{
+    text-transform:capitalize;
+    color: white;
+}
+.val{
+    color: white;
+}
+.active{
+    text-decoration: underline;
+}
+
+
+
+.paging {
+    display: flex;
+    width: 250px;
+    margin: 15px auto;
+    /* justify-content: space-evenly; */
+}
+.paging > a {
+    text-decoration: none;
+    color: #d920f9;
+    box-shadow: 0px 0px 5px;
+    background-color: #25214c;
+    opacity: .9;
+    padding: 5px 10px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paging > a:hover {
+    background-color:#c934a1
+}
+.paging a:first-child {
+    margin-right: auto;
+}
+.paging a:last-child {
+    margin-left: auto;
 }
